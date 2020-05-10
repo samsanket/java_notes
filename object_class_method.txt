@@ -1,0 +1,19 @@
+Object class in Java
+
+The Object class is the parent class of all the classes in java by default. In other words, it is the topmost class of java.
+
+The Object class is beneficial if you want to refer any object whose type you don't know. Notice that parent class reference variable can refer the child class object, know as upcasting.
+    Object obj=getObject();//we don't know what object will be returned from this method  
+    Following are various methods of Object class:
+
+    protected Object clone() - Used to create and return a copy of this object.
+     boolean equals(Object obj) - Used to indicate whether some other object is "equal to" this one.
+    protected void finalize() - garbage collector calls this method on an object when it determines that there are no more references to the object.
+    Class<?> getClass() - Used to get the runtime class of this Object.
+    int hashCode() - Used to get a hash code value for the object.
+    void notify() - Used to wake up a single thread that is waiting on this object's monitor.
+    void notifyAll() - Used to wake up all threads that are waiting on this object's monitor.
+    String toString() - Used to get a string representation of the object.
+    void wait() - marks the current thread to wait until another thread invokes the notify() method or the notifyAll() method for this object.
+    void wait(long timeout) - marks the current thread to wait until either another thread invokes the notify() method or the notifyAll() method for this object, or a specified amount of time has elapsed.
+    void wait(long timeout, int nanos) - marks the current thread to wait until another thread invokes the notify() method or the notifyAll() method for this object, or some other thread interrupts the current thread, or a certain amount of real time has elapsed.
