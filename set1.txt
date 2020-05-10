@@ -1,0 +1,77 @@
+Here you can find some of the important stuffs the java interview questios
+
+A. What is Java JDK, JRE and JVM – In-depth Analysis
+A.1 What is JVM?
+
+Java Virtual machine (JVM) is the virtual machine that runs the Java bytecodes. You get this bytecode by compiling the .java files into .class files. .class files contain the bytecodes understood by the JVM.
+
+In the real world, JVM is a specification that provides a runtime environment in which Java bytecode can be executed. Different vendors provide different implementations of this specification
+JVM delivers the optimal performance for Java applications using many advanced techniques, incorporating a state-of-the-art memory model, garbage collector, and adaptive optimizer
+
+https://howtodoinjava.com/wp-content/uploads/2018/05/JVM-Architecture.png
+
+JVM Memory Areas
+Method Area stores class structures like metadata, the constant runtime pool, and the code for methods.
+
+Heap stores all objects that are created during application execution.
+
+Stacks store local variables, and intermediate results. All such variables are local to the thread by which they are created. Each 
+
+thread has its own JVM stack, created simultaneously as the thread is created. So all such local variable are called thread-local variables.
+
+PC register store the physical memory address of the statements which is currently executing. In Java, each thread has its separate PC register.
+
+Java supports and uses native code as well. Many low level code is written in languages like C and C++. Native method stacks hold the instruction of native code.
+
+
+** The Java Runtime Environment (JRE)**
+Is a software package which bundles the libraries (jars) and the Java Virtual Machine, and other components to run applications written in the Java. JVM is just a part of JRE distributions.
+
+To execute any Java application, you need JRE installed in the machine. It’s minimum requirement to execute Java applications on any machine.
+
+JRE bundles the following components –
+
+    DLL files used by the Java HotSpot Client Virtual Machine.
+    DLL files used by the Java HotSpot Server Virtual Machine.
+    Code libraries, property settings, and resource files used by the Java runtime environment. e.g. rt.jar and charsets.jar.
+    Java extension files such as localedata.jar.
+    Contains files used for security management. These include the security policy (java.policy) and security properties (java.security) files.
+    Jar files containing support classes for applets.
+    Contains TrueType font files for use by the platform.
+    
+    
+    
+    4. What is JDK?
+
+JDK is a superset of JRE. JDK contains everything that JRE has along with development tools for developing, debugging, and monitoring Java applications. You need JDK when you need to develop Java applications.
+
+Few important components shipped with JDKs are as follows:
+
+    appletviewer – this tool can be used to run and debug Java applets without a web browser
+    apt – the annotation-processing tool
+    extcheck – a utility that detects JAR file conflicts
+    javadoc – the documentation generator, which automatically generates documentation from source code comments
+    jar – the archiver, which packages related class libraries into a single JAR file. This tool also helps manage JAR files
+    jarsigner – the jar signing and verification tool
+    javap – the class file disassembler
+    javaws – the Java Web Start launcher for JNLP applications
+    JConsole – Java Monitoring and Management Console
+    jhat – Java Heap Analysis Tool
+    jrunscript – Java command-line script shell
+    jstack – utility that prints Java stack traces of Java threads
+    keytool – tool for manipulating the keystore
+    policytool – the policy creation and management tool
+    xjc – Part of the Java API for XML Binding (JAXB) API. It accepts an XML schema and generates Java classes
+
+Same as JREs, JDKs are also platform dependent. So take care when you download the JDK package for your machine.
+
+
+
+    JRE = JVM + libraries to run Java application.
+
+    JDK = JRE + tools to develop Java Application.
+    
+    
+    https://howtodoinjava.com/wp-content/uploads/2018/05/JDK-JRE-JVM.png
+    
+    
